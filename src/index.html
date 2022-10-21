@@ -8,7 +8,7 @@
   <title>AnandTextile</title>
 </head>
 <body>
-    <div>
+    <div class="bg-pink-600" >
         <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5  dark:bg-gray-900">
             <div class="container flex flex-wrap justify-between items-center mx-auto">
             <a href="#" class="flex items-center">
@@ -41,7 +41,7 @@
         </nav>
   
         
-        <main>
+        <main class="space-y-4">
 
            
             <div class="p-4 w-full h-96 text-center bg-white  border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
@@ -64,17 +64,22 @@
             </div>
 
 
-            <div id="default-carousel" class="relative" data-carousel="static">
+            <div id="default-carousel" class="relative" data-carousel="static  mb-10">
                 <!-- Carousel wrapper -->
-                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <div class="relative h-96 overflow-hidden rounded-lg md:h-96">
                     <!-- Item 1 -->
                     <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="">
                         <span class="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
-                        <img src="img/bikini.jpg" class="absolute block w-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        <img class="max-w-full h-auto" src="img/bikini.jpg" alt="image description">
+
                     </div>
                     <!-- Item 2 -->
                     <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item="">
-                        <img src="/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        <figure class="max-w-lg">
+                            <img class="max-w-full h-auto rounded-lg" src="img/bikini.jpg" alt="image description">
+                            <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Image caption</figcaption>
+                        </figure>
+  
                     </div>
                     <!-- Item 3 -->
                     <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
@@ -108,6 +113,14 @@
          
 
         </main>
+
+<!-- 
+        <div class="relative">
+            <img src="img/Onepiece.jpg " class=" absolute top-1/2 left-1/2 -translate-x-1 -translate-y-1\/2" >
+            <h1 class="absolute text-5xl top-1/2 left-1/2 -translate-x-1 -translate-y-1\/2 ">Center</h1>
+
+
+        </div> -->
 
     </div>
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
